@@ -5,7 +5,7 @@ export default class Parent extends Component {
     let dataProducts = this.props.dataListProducts;
     console.log(this.props.dataListProducts);
     let result= dataProducts.map((item,index)=>{
-        return <GrandChild key={index} stt={index} item={item}></GrandChild>
+        return <GrandChild key={index}  items={item}></GrandChild>
     })
     return (
         <>
